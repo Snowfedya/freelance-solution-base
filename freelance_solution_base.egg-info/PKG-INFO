@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: freelance-solution-base
+Version: 0.1.0
+Summary: Curated, tested solution catalog and decision framework for freelance automation tasks
+Requires-Python: >=3.11
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest<10,>=8; extra == "dev"
+Dynamic: license-file

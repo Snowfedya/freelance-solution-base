@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+freelance_solution_base.egg-info/PKG-INFO
+freelance_solution_base.egg-info/SOURCES.txt
+freelance_solution_base.egg-info/dependency_links.txt
+freelance_solution_base.egg-info/requires.txt
+freelance_solution_base.egg-info/top_level.txt
+tests/test_catalog.py

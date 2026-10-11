@@ -1,0 +1,10 @@
+[project]
+name = "freelance-solution-base"
+version = "0.1.0"
+description = "Curated, tested solution catalog and decision framework for freelance automation tasks"
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+]

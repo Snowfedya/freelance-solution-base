@@ -1,0 +1,112 @@
+{
+  "solutions": [
+    {
+      "id": "form-to-telegram",
+      "type": "fork",
+      "target_order_classes": ["form_lead", "landing_automation", "site_contact"],
+      "repo": "Snowfedya/form-to-telegram",
+      "upstream": "Varke/form-to-telegram",
+      "license": "MIT",
+      "status": "tested",
+      "test_summary": "41 passed",
+      "adaptation_hours": "0.5-2",
+      "risk": "low"
+    },
+    {
+      "id": "booking-bot",
+      "type": "fork",
+      "target_order_classes": ["telegram_booking", "master_schedule"],
+      "repo": "Snowfedya/booking_bot",
+      "upstream": "DigitalJacob/booking_bot",
+      "license": "MIT",
+      "status": "experimental_tested",
+      "test_summary": "43 passed, 8 skipped",
+      "adaptation_hours": "1-3",
+      "risk": "medium_requires_postgres"
+    },
+    {
+      "id": "file-processor-starter",
+      "type": "starter",
+      "target_order_classes": ["csv_xlsx_processing", "file_transform", "data_cleanup"],
+      "repo": "Snowfedya/freelance-file-processor-starter",
+      "upstream": null,
+      "license": "MIT",
+      "status": "tested",
+      "test_summary": "4 passed",
+      "adaptation_hours": "1-4",
+      "risk": "low"
+    },
+    {
+      "id": "integration-starter",
+      "type": "starter",
+      "target_order_classes": ["webhook_relay", "api_bridge", "event_transform"],
+      "repo": "Snowfedya/freelance-integration-starter",
+      "upstream": null,
+      "license": "MIT",
+      "status": "tested",
+      "test_summary": "5 passed",
+      "adaptation_hours": "1-4",
+      "risk": "low"
+    },
+    {
+      "id": "tablib",
+      "type": "reference_dependency",
+      "target_order_classes": ["table_export", "csv_xlsx_generation"],
+      "repo": "jazzband/tablib",
+      "upstream": "jazzband/tablib",
+      "license": "MIT",
+      "status": "upstream_only",
+      "test_summary": "Do not fork; use via PyPI",
+      "adaptation_hours": "0.5-1",
+      "risk": "low"
+    },
+    {
+      "id": "crawlee-python",
+      "type": "reference_dependency",
+      "target_order_classes": ["marketplace_monitoring", "site_scraping"],
+      "repo": "apify/crawlee-python",
+      "upstream": "apify/crawlee-python",
+      "license": "Apache-2.0",
+      "status": "upstream_only",
+      "test_summary": "Do not fork; use via PyPI",
+      "adaptation_hours": "2-6",
+      "risk": "medium_antibot"
+    },
+    {
+      "id": "gotenberg",
+      "type": "reference_service",
+      "target_order_classes": ["html_docx_to_pdf", "invoice_generation"],
+      "repo": "gotenberg/gotenberg",
+      "upstream": "gotenberg/gotenberg",
+      "license": "MIT",
+      "status": "upstream_only",
+      "test_summary": "Run as Docker service; do not fork",
+      "adaptation_hours": "1-2",
+      "risk": "low"
+    },
+    {
+      "id": "pocketbase",
+      "type": "reference_service",
+      "target_order_classes": ["small_admin", "crud_auth_files"],
+      "repo": "pocketbase/pocketbase",
+      "upstream": "pocketbase/pocketbase",
+      "license": "MIT",
+      "status": "upstream_only",
+      "test_summary": "Single Go binary / Docker; do not fork",
+      "adaptation_hours": "1-3",
+      "risk": "low"
+    },
+    {
+      "id": "doctor-command",
+      "type": "reference_tool",
+      "target_order_classes": ["wordpress_crash", "wordpress_health_audit"],
+      "repo": "wp-cli/doctor-command",
+      "upstream": "wp-cli/doctor-command",
+      "license": "MIT",
+      "status": "unverified_on_host_needs_composer",
+      "test_summary": "Use via WP-CLI package install",
+      "adaptation_hours": "0.5-2",
+      "risk": "medium_host_tooling"
+    }
+  ]
+}
